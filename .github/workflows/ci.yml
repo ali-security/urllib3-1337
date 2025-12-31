@@ -70,7 +70,6 @@ jobs:
           sudo apt-get install -y python3 python3-pip python2 python2.7-dev build-essential libffi-dev libssl-dev wget
           wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
           python2 get-pip.py
-          python3 -m pip config set global.index-url "https://:2020-03-10T13:28:14.391Z@time-machines-pypi.sealsecurity.io/"
           python3 -m pip install --upgrade pip setuptools nox virtualenv
 
       - name: Install Dependencies

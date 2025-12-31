@@ -21,7 +21,7 @@ jobs:
         run: |
           python3.7 -m pip install pip setuptools wheel twine rstcheck;
           python3.7 -m pip install atomicwrites==1.0.0 --index-url https://pypi.org/simple/
-          python3.7 -m pip config set global.index-url "https://:2020-03-10T13:28:14.391Z@time-machines-pypi.sealsecurity.io/"
+          python3.7 -m pip config set global.index-url "https://:2020-09-10T13:28:14.391Z@time-machines-pypi.sealsecurity.io/"
           python3.7 -m pip install --force-reinstall pip setuptools wheel twine rstcheck;
           python3.7 setup.py sdist bdist_wheel;
           rstcheck README.rst CHANGES.rst
